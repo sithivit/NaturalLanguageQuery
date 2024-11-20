@@ -1,3 +1,7 @@
-from db_analyzer import get_db_schema
+from query_generator import generate_sql_query
 
-print(get_db_schema())
+# Example usage
+if __name__ == "__main__":
+    query = "Find the names of all users"
+    sql = generate_sql_query(query)
+    print(sql)
